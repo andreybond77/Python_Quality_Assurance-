@@ -1,0 +1,25 @@
+============================= test session starts =============================
+collecting ... collected 10 items
+
+test.py::test_default_initial_amount PASSED                              [ 10%]
+test.py::test_setting_initial_amount PASSED                              [ 20%]
+test.py::test_wallet_add_cash SKIPPED (bug #123)                         [ 30%]
+Skipped: bug #123
+
+test.py::test_wallet_spend_cash PASSED                                   [ 40%]Баланс карты:  10
+
+test.py::test_wallet_spend_cash_exception PASSED                         [ 50%]
+test.py::test_wallet_initial_dollar_balance PASSED                       [ 60%]
+test.py::test_wallet_initial_dollar_balance_with_amount PASSED           [ 70%]
+test.py::test_wallet_add_cash_updates_dollar_balance PASSED              [ 80%]Баланс карты:  164
+
+test.py::test_transactions[30-10-20] PASSED                              [ 90%]Баланс карты:  30
+Баланс карты:  20
+
+test.py::test_transactions[20-2-18] PASSED                               [100%]Баланс карты:  20
+Баланс карты:  18
+
+
+======================== 9 passed, 1 skipped in 0.13s =========================
+
+Process finished with exit code 0
